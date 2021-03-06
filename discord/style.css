@@ -9,11 +9,59 @@
     background-color: black;
     display: flex;
 }
+/* User chat */
 .user-chat{
     width: 4%;
     height:100vh;
     background-color: #202225;
 }
+.server{
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 100%;
+    background-color: #36393F;
+    transition: all 1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #43B581;
+
+}
+.server:hover{
+    border-radius: 10px;
+    transition: 1s;
+    background-color: #43B581;
+    color: white;
+}
+.line{
+    border-bottom: 3px solid #36393F;
+    margin: 0 30%;
+    border-radius: 10px;
+}
+
+.user{
+    display: flex;
+    align-items:center;
+    color: whitesmoke;
+    padding: 10px;
+    background-color:#36393F;
+    margin:5px;
+    justify-content: center;
+}
+.user>*{
+    margin: 0px 10px;
+}
+.user img{
+    border-radius:50%;
+    width: 30px;
+}
+
+
+
+/* ------------- */
+
+/* Chat des */
 .chat-des{
     background-color: #2f3136;
     height:100vh;
@@ -31,15 +79,16 @@
 .chat-body{
     background-color:#36393f;
     display: flex;
-    height:100%;
+    height:calc(100% - 50px);
+    width:100%
 }
 .chat-message{
     background-color:#36393f;
-    width: 75%;
+    width: 80%;
     height:100%
 }
 .user-list{
-    width:25%;
+    width:20%;
     background-color:#2f3136;
     height:100%;
 }
