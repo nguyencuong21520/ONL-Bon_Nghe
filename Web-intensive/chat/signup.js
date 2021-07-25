@@ -11,13 +11,13 @@ form_signup.onsubmit = (nghe)=>{
     let data = {
         name: name,
         email: email,
-        password: pass
+        pass: pass
     }
     
     if(pass){
         if(pass.length > 6){
             if(pass == cfpass){
-                console.log(data);
+                signUp_process(data)
             }else{
                 setTextError("#cfpassword-err","Confirm password must be the same")
             }
@@ -35,3 +35,40 @@ form_signup.onsubmit = (nghe)=>{
 let setTextError = (tagname, content) => {
     document.querySelector(tagname).innerHTML = content
 }
+let signUp_process = async (data)=>{
+    let email = data.email
+    let password = data.pass
+    let name = data.name
+    try {
+        await firebase.auth().createUserWithEmailAndPassword(email, password)
+        await firebase.auth().currentUser.updateProfile({
+            displayName: name
+        })
+        await firebase.auth().currentUser.sendEmailVerification()
+        sweetAlert('success','Successfully! please check your email')
+    } catch (error) {
+        let message = error.message
+        sweetAlert('error',message)
+    }
+}
+
+
+let sweetAlert = (icon, title,)=>{
+    const Toast = Swal.mixin({
+        toast: true,
+        position: 'top-end',
+        showConfirmButton: false,
+        timer: 3000,
+        timerProgressBar: true,
+        didOpen: (toast) => {
+          toast.addEventListener('mouseenter', Swal.stopTimer)
+          toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+      })
+      
+      Toast.fire({
+        icon: icon,
+        title: title,
+      })
+}
+

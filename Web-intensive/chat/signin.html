@@ -21,7 +21,14 @@
   <body>
     <div class="signup_container">
       <div class="signup_left">
-        <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_h7dcmwwl.json"  background="transparent"  speed="1"  style="width: 400px; height: 400px;"  loop  autoplay></lottie-player>
+        <lottie-player
+          src="https://assets1.lottiefiles.com/packages/lf20_h7dcmwwl.json"
+          background="transparent"
+          speed="1"
+          style="width: 400px; height: 400px"
+          loop
+          autoplay
+        ></lottie-player>
         <p>You dont have an account? <a href="./signup.html">Sign Up</a></p>
       </div>
       <div class="signup_right">
@@ -29,29 +36,64 @@
         <form id="form_signin" action="">
           <div class="input-wrapper">
             <i class="fad fa-envelope fa-2x"></i>
-            <input name="email" type="email" placeholder="Email" />
+            <input name="email" type="email" placeholder="Email" required />
           </div>
           <div class="input-wrapper">
             <i class="fad fa-key fa-2x"></i>
-            <input id="p" name="password" type="password" placeholder="Password" />
+            <input
+              id="p"
+              name="password"
+              type="password"
+              placeholder="Password"
+              required
+            />
           </div>
-          <input type="checkbox" id="showPassword"  onclick="visibility()">
-          <label for="showPassword">Show password</label><br>
+          <input type="checkbox" id="showPassword" onclick="visibility()" />
+          <label for="showPassword">Show password</label><br />
 
           <button type="submit">Login</button>
         </form>
       </div>
     </div>
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-auth.js"></script>
+
     <script>
-        function visibility() {
-            var x = document.getElementById("p");
-            if (x.type === "password") {
-                x.type = "text";
-            } else {
-                x.type = "password";
-            }
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      var firebaseConfig = {
+        apiKey: "AIzaSyD3PWLu1_yyOJP410XW6XQV-A7P_a5V5lI",
+        authDomain: "bonnghe-chat.firebaseapp.com",
+        projectId: "bonnghe-chat",
+        storageBucket: "bonnghe-chat.appspot.com",
+        messagingSenderId: "118813511998",
+        appId: "1:118813511998:web:c5fd1b21273169dc055c6f",
+        measurementId: "G-ZFY4VWVTCE",
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    </script>
+
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="./signin.js"></script>
+    <script>
+      function visibility() {
+        var x = document.getElementById("p");
+        if (x.type == "password") {
+          x.type = "text";
+        } else {
+          x.type = "password";
         }
+      }
     </script>
   </body>
 </html>
