@@ -141,7 +141,7 @@
                     <span> Phạm Tuấn Anh</span>
                 </div>
                 <div class="l"></div>
-                <div class="ft">
+                <div onclick="signOut()" class="ft">
                     <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_vmlm0zew.json"  background="transparent"  speed="1"  style="width: 100px; height: 100px;"  loop  autoplay></lottie-player>
                 </div>
 
@@ -162,16 +162,111 @@
         </div>
         <div class="chat_right">
             <div class="chat_container">
-                <div class="chat_title"></div>
-                <div class="chat_body"></div>
+                <div class="chat_title">
+                    <div>
+                        <h1>Nguyễn Văn Nghé</h1>
+                        <p>HGDFGAHGDHGADGCD</p>
+                    </div>
+                    <div>
+                        <p style="font-size:20px">18:00 wed</p>
+                    </div>
+                </div>
+                <div class="chat_body">
+                    <div class="chat_body_wrapper">
+
+                        <div class="chat_content">
+                            <span>Hello Bon</span>
+                        </div>
+
+                        <div class="chat_content owner">
+                            <span>Hello Nghé, Nghé bảo gì</span>
+                        </div>
+
+                        <div class="chat_content owner">
+                            <span>Hello Nghé, Nghé bảo gì</span>
+                        </div>
+
+                        <div class="chat_content">
+                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quidem magnam, repellat harum illo ullam magni natus at labore minus error excepturi illum hic ab ipsum ut dolorem unde sit.</span>
+                        </div>
+
+                        <div class="chat_content">
+                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quidem magnam, repellat harum illo ullam magni natus at labore minus error excepturi illum hic ab ipsum ut dolorem unde sit.</span>
+                        </div>
+
+                        <div class="chat_content">
+                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quidem magnam, repellat harum illo ullam magni natus at labore minus error excepturi illum hic ab ipsum ut dolorem unde sit.</span>
+                        </div>
+
+                        <div class="chat_content">
+                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quidem magnam, repellat harum illo ullam magni natus at labore minus error excepturi illum hic ab ipsum ut dolorem unde sit.</span>
+                        </div>
+
+                        <div class="chat_content">
+                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quidem magnam, repellat harum illo ullam magni natus at labore minus error excepturi illum hic ab ipsum ut dolorem unde sit.</span>
+                        </div>
+
+                        <div class="chat_content">
+                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quidem magnam, repellat harum illo ullam magni natus at labore minus error excepturi illum hic ab ipsum ut dolorem unde sit.</span>
+                        </div>
+
+                        <div class="chat_content">
+                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quidem magnam, repellat harum illo ullam magni natus at labore minus error excepturi illum hic ab ipsum ut dolorem unde sit.</span>
+                        </div>
+
+                    </div>
+                    <form action="">
+                        <input type="text">
+                        <button>
+                            <lottie-player src="https://assets5.lottiefiles.com/private_files/lf30_PHmUt4.json"  background="transparent"  speed="1"  style="width: 50px; height: 50px;"  loop  autoplay></lottie-player>
+                        </button>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
 
-    
 
+
+
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-analytics.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-auth.js"></script>
+    
+        <script>
+          // Your web app's Firebase configuration
+          // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+          var firebaseConfig = {
+            apiKey: "AIzaSyD3PWLu1_yyOJP410XW6XQV-A7P_a5V5lI",
+            authDomain: "bonnghe-chat.firebaseapp.com",
+            projectId: "bonnghe-chat",
+            storageBucket: "bonnghe-chat.appspot.com",
+            messagingSenderId: "118813511998",
+            appId: "1:118813511998:web:c5fd1b21273169dc055c6f",
+            measurementId: "G-ZFY4VWVTCE",
+          };
+          // Initialize Firebase
+          firebase.initializeApp(firebaseConfig);
+          firebase.analytics();
+        </script>
+    
+        <script src="./chat.js"></script>
     <!-- CSS only -->
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script>
+    const chk = document.getElementById('chk');
+
+chk.addEventListener('change', () => {
+document.body.classList.toggle('dark');
+});
+</script>
+
+
 </body>
 </html>
