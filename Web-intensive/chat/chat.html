@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chat</title>
     <!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="./chat.css">
     <link
     href="https://pro.fontawesome.com/releases/v5.12.0/css/all.css"
@@ -18,119 +19,14 @@
         <div class="chat_left">
             <div class="list_users_container">
                 <div class="list_users_header">
-                    <h1>Chat APP</h1>
+                    <form id="fAddConversation">
+                        <input name="fName" type="text" placeholder="Chat Name">
+                        <input name="fEmail" type="text" placeholder="Friend Email">
+                        <button type="submit">Add</button>
+                    </form>
                 </div>
                 <hr>
                 <div class="list_users">
-                    <div class="list_user">
-                        <div>
-                            <img src="https://img.icons8.com/material-outlined/48/000000/user-male-circle.png" alt="">
-                            <span>Nguyễn Văn Nghé</span>
-                        </div>
-                        <div>
-                            18:00 Wed
-                        </div>
-                    </div>
-                    <div class="list_user">
-                        <div>
-                            <img src="https://img.icons8.com/material-outlined/48/000000/user-male-circle.png" alt="">
-                            <span>Nguyễn Văn Nghé</span>
-                        </div>
-                        <div>
-                            18:00 Wed
-                        </div>
-                    </div>
-                    <div class="list_user">
-                        <div>
-                            <img src="https://img.icons8.com/material-outlined/48/000000/user-male-circle.png" alt="">
-                            <span>Nguyễn Văn Nghé</span>
-                        </div>
-                        <div>
-                            18:00 Wed
-                        </div>
-                    </div>
-                    <div class="list_user">
-                        <div>
-                            <img src="https://img.icons8.com/material-outlined/48/000000/user-male-circle.png" alt="">
-                            <span>Nguyễn Văn Nghé</span>
-                        </div>
-                        <div>
-                            18:00 Wed
-                        </div>
-                    </div>
-                    <div class="list_user">
-                        <div>
-                            <img src="https://img.icons8.com/material-outlined/48/000000/user-male-circle.png" alt="">
-                            <span>Nguyễn Văn Nghé</span>
-                        </div>
-                        <div>
-                            18:00 Wed
-                        </div>
-                    </div>
-                    <div class="list_user">
-                        <div>
-                            <img src="https://img.icons8.com/material-outlined/48/000000/user-male-circle.png" alt="">
-                            <span>Nguyễn Văn Nghé</span>
-                        </div>
-                        <div>
-                            18:00 Wed
-                        </div>
-                    </div>
-                    <div class="list_user">
-                        <div>
-                            <img src="https://img.icons8.com/material-outlined/48/000000/user-male-circle.png" alt="">
-                            <span>Nguyễn Văn Nghé</span>
-                        </div>
-                        <div>
-                            18:00 Wed
-                        </div>
-                    </div>
-                    <div class="list_user">
-                        <div>
-                            <img src="https://img.icons8.com/material-outlined/48/000000/user-male-circle.png" alt="">
-                            <span>Nguyễn Văn Nghé</span>
-                        </div>
-                        <div>
-                            18:00 Wed
-                        </div>
-                    </div>
-                    <div class="list_user">
-                        <div>
-                            <img src="https://img.icons8.com/material-outlined/48/000000/user-male-circle.png" alt="">
-                            <span>Nguyễn Văn Nghé</span>
-                        </div>
-                        <div>
-                            18:00 Wed
-                        </div>
-                    </div>
-                    <div class="list_user">
-                        <div>
-                            <img src="https://img.icons8.com/material-outlined/48/000000/user-male-circle.png" alt="">
-                            <span>Nguyễn Văn Nghé</span>
-                        </div>
-                        <div>
-                            18:00 Wed
-                        </div>
-                    </div>
-                    <div class="list_user">
-                        <div>
-                            <img src="https://img.icons8.com/material-outlined/48/000000/user-male-circle.png" alt="">
-                            <span>Nguyễn Văn Nghé</span>
-                        </div>
-                        <div>
-                            18:00 Wed
-                        </div>
-                    </div>
-                    <div class="list_user">
-                        <div>
-                            <img src="https://img.icons8.com/material-outlined/48/000000/user-male-circle.png" alt="">
-                            <span>Nguyễn Văn Nghé</span>
-                        </div>
-                        <div>
-                            18:00 Wed
-                        </div>
-                    </div>
-
 
                 </div>
 
@@ -138,7 +34,7 @@
             <div class="control_container">
                 <div class="ft">
                     <img src="https://scontent-hkt1-1.xx.fbcdn.net/v/t1.6435-9/123834500_1622502021244911_8650773348625237615_n.jpg?_nc_cat=102&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=arf9RMIQE1IAX-R-SSe&_nc_ht=scontent-hkt1-1.xx&oh=b40a2a2976aa2cd1c014f5b3ed201b28&oe=612008DE" alt="">
-                    <span> Phạm Tuấn Anh</span>
+                    <span id="currentEmail">...</span>
                 </div>
                 <div class="l"></div>
                 <div onclick="signOut()" class="ft">
@@ -164,8 +60,8 @@
             <div class="chat_container">
                 <div class="chat_title">
                     <div>
-                        <h1>Nguyễn Văn Nghé</h1>
-                        <p>HGDFGAHGDHGADGCD</p>
+                        <h1 id="currentChatName">...</h1>
+                        <p id="currentID">...</p>
                     </div>
                     <div>
                         <p style="font-size:20px">18:00 wed</p>
@@ -173,51 +69,11 @@
                 </div>
                 <div class="chat_body">
                     <div class="chat_body_wrapper">
-
-                        <div class="chat_content">
-                            <span>Hello Bon</span>
-                        </div>
-
-                        <div class="chat_content owner">
-                            <span>Hello Nghé, Nghé bảo gì</span>
-                        </div>
-
-                        <div class="chat_content owner">
-                            <span>Hello Nghé, Nghé bảo gì</span>
-                        </div>
-
-                        <div class="chat_content">
-                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quidem magnam, repellat harum illo ullam magni natus at labore minus error excepturi illum hic ab ipsum ut dolorem unde sit.</span>
-                        </div>
-
-                        <div class="chat_content">
-                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quidem magnam, repellat harum illo ullam magni natus at labore minus error excepturi illum hic ab ipsum ut dolorem unde sit.</span>
-                        </div>
-
-                        <div class="chat_content">
-                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quidem magnam, repellat harum illo ullam magni natus at labore minus error excepturi illum hic ab ipsum ut dolorem unde sit.</span>
-                        </div>
-
-                        <div class="chat_content">
-                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quidem magnam, repellat harum illo ullam magni natus at labore minus error excepturi illum hic ab ipsum ut dolorem unde sit.</span>
-                        </div>
-
-                        <div class="chat_content">
-                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quidem magnam, repellat harum illo ullam magni natus at labore minus error excepturi illum hic ab ipsum ut dolorem unde sit.</span>
-                        </div>
-
-                        <div class="chat_content">
-                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quidem magnam, repellat harum illo ullam magni natus at labore minus error excepturi illum hic ab ipsum ut dolorem unde sit.</span>
-                        </div>
-
-                        <div class="chat_content">
-                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quidem magnam, repellat harum illo ullam magni natus at labore minus error excepturi illum hic ab ipsum ut dolorem unde sit.</span>
-                        </div>
-
+                        loading...
                     </div>
-                    <form action="">
-                        <input type="text">
-                        <button>
+                    <form id="message_input">
+                        <input name="m" type="text">
+                        <button type="submit">
                             <lottie-player src="https://assets5.lottiefiles.com/private_files/lf30_PHmUt4.json"  background="transparent"  speed="1"  style="width: 50px; height: 50px;"  loop  autoplay></lottie-player>
                         </button>
                     </form>
@@ -225,6 +81,7 @@
             </div>
         </div>
     </div>
+
 
 
 
@@ -258,7 +115,8 @@
         <script src="./chat.js"></script>
     <!-- CSS only -->
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 <script>
     const chk = document.getElementById('chk');
 
